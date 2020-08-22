@@ -1,0 +1,9 @@
+.display {
+  display: flex;
+  border: 2px solid black;
+  height: 80px;
+  font-size: 45px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 20px;
+}
