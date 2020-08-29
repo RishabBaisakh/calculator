@@ -1,6 +1,7 @@
 .inputButton {
   flex: 1;
   height: 80px;
+  font-size: 30px;
 }
 
 .zero {

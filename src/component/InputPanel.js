@@ -3,8 +3,19 @@ import InputGroupWithExtras from "react-bootstrap/esm/InputGroup";
 import Button from "./Button";
 import "./InputPanel.css";
 
-function handleButtonClick(event) {
-  console.log(event);
+function handleInputButtonClick(event) {
+  console.log("handleButtonClick() => ", event);
+}
+
+function handleResetButtonClick(event) {
+  console.log("handleResetButtonClick() => ", event);
+}
+
+function handleOperatorButtonClick(event) {
+  console.log("handleOperatorButtonClick() => ", event);
+}
+function handleEqualButtonClick(event) {
+  console.log("handleEqualButtonClick() => ", event);
 }
 
 function InputPanel(props) {
@@ -14,84 +25,107 @@ function InputPanel(props) {
         <div className="InputRow">
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
+            onClick={handleResetButtonClick}
             name="AC"
           />
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
+            onClick={handleInputButtonClick}
             name="+/-"
           />
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
+            onClick={handleOperatorButtonClick}
             name="%"
           />
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
+            onClick={handleOperatorButtonClick}
             name="÷"
           />
         </div>
         <div className="InputRow">
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
+            onClick={handleInputButtonClick}
             name="7"
           />
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
+            onClick={handleInputButtonClick}
             name="8"
           />
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
+            onClick={handleInputButtonClick}
             name="9"
           />
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
+            onClick={handleOperatorButtonClick}
             name="*"
           />
         </div>
         <div className="InputRow">
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
+            onClick={handleInputButtonClick}
             name="4"
           />
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
-            name="3"
+            onClick={handleInputButtonClick}
+            name="5"
           />
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
-            name="2"
+            onClick={handleInputButtonClick}
+            name="6"
           />
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
-            name="1"
+            onClick={handleOperatorButtonClick}
+            name="-"
           />
         </div>
         <div className="InputRow">
           <Button
+            className="inputButton"
+            onClick={handleInputButtonClick}
+            name="1"
+          />
+          <Button
+            className="inputButton"
+            onClick={handleInputButtonClick}
+            name="2"
+          />
+          <Button
+            className="inputButton"
+            onClick={handleInputButtonClick}
+            name="3"
+          />
+          <Button
+            className="inputButton"
+            onClick={handleOperatorButtonClick}
+            name="+"
+          />
+        </div>
+
+        <div className="InputRow">
+          <Button
             className="zero inputButton"
             variant="primary"
-            onClick={handleButtonClick}
+            onClick={handleInputButtonClick}
             name="0"
           />
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
+            onClick={handleInputButtonClick}
             name="."
           />
           <Button
             className="inputButton"
-            onClick={handleButtonClick}
+            onClick={handleEqualButtonClick}
             name="="
           />
         </div>

@@ -10,7 +10,7 @@ class Button extends React.Component {
   }
 
   handleButtonClick() {
-    alert("Button Clicked");
+    alert(`${this.props.name} Button Clicked`);
     this.props.onClick(this.props.name);
   }
 
