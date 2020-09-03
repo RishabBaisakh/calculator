@@ -1,6 +1,5 @@
 import React from "react";
 import "./Button.css";
-import { render } from "@testing-library/react";
 
 class Button extends React.Component {
   constructor(props) {
@@ -10,17 +9,16 @@ class Button extends React.Component {
   }
 
   handleButtonClick() {
-    alert(`${this.props.name} Button Clicked`);
     this.props.onClick(this.props.name);
   }
 
   render() {
+    var className =
+      this.props.name === "0" ? "zero inputButton" : "inputButton";
+
     return (
       <>
-        <button
-          className={this.props.className}
-          onClick={this.handleButtonClick}
-        >
+        <button className={className} onClick={this.handleButtonClick}>
           {this.props.name}
         </button>
       </>

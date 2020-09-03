@@ -1,18 +1,19 @@
 function evaluate(numberOne, numberTwo, operator) {
+  console.log("operator => ", operator, "one => ", numberOne);
   switch (operator) {
     case "+":
       return numberOne + numberTwo;
     case "-":
       return numberOne - numberTwo;
     case "*":
-      numberOne * numberTwo;
+      return numberOne * numberTwo;
     case "÷":
-      numberOne / numberTwo;
+      return numberOne / numberTwo;
     case "%":
-      number * (numberTwo / 100);
+      return numberOne * (numberTwo / 100);
   }
 
   return null;
 }
 
-export default operator;
+export default evaluate;

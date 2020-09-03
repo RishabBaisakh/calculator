@@ -8,9 +8,17 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
+    this.changeDisplay = this.changeDisplay.bind(this);
+
     this.state = {
       display: "This is the display component!",
     };
+  }
+
+  changeDisplay(display) {
+    this.setState({
+      display: display,
+    });
   }
 
   render() {
@@ -20,7 +28,11 @@ class App extends React.Component {
           <Row>
             <Col>
               <Display value={this.state.display}></Display>
-              <InputPanel />
+              <InputPanel
+                onChange={(display) => {
+                  this.changeDisplay(display);
+                }}
+              />
             </Col>
           </Row>
         </Container>
