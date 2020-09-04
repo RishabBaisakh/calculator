@@ -46,8 +46,6 @@ class InputPanel extends React.Component {
   }
 
   handleEqualButtonClick(event) {
-    // Why?
-    // if (this.state.numberOne != null) console.log("dkvbfdbv");
     var result = null;
 
     if (
