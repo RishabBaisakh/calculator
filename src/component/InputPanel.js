@@ -31,7 +31,7 @@ class InputPanel extends React.Component {
   }
 
   handleResetButtonClick(event) {
-    this.props.onChange();
+    this.props.onChange("0");
   }
 
   handleOperatorButtonClick(event) {
